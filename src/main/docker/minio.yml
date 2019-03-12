@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+  minio:
+    image: minio/minio:RELEASE.2019-03-06T22-47-10Z
+    volumes:
+      - minio-data:/data
+    ports:
+      - "9001:9000"
+    environment:
+      MINIO_ACCESS_KEY: minio
+      MINIO_SECRET_KEY: minio123
+    command: server /data
+
+volumes:
+  minio-data:

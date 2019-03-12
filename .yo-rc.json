@@ -33,6 +33,13 @@
       "zh-cn"
     ],
     "skipClient": true,
-    "skipUserManagement": true
+    "skipUserManagement": true,
+    "appsFolders": [
+      "driver"
+    ],
+    "directoryPath": "../",
+    "gatewayType": "zuul",
+    "clusteredDbApps": [],
+    "monitoring": "no"
   }
 }

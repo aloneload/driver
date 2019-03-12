@@ -1,0 +1,12 @@
+version: '2'
+services:
+    driver-app:
+        image: driver
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATA_MONGODB_URI=mongodb://driver-mongodb:27017
+            - SPRING_DATA_MONGODB_DATABASE=driver
+            - JHIPSTER_SLEEP=10
+    driver-mongodb:
+        image: mongo:3.6.3
+    
